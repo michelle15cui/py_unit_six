@@ -5,7 +5,16 @@ def add_numbers(numbers):
     :param numbers: a list of numbers
     :return: the sum of all the numbers in the list
     """
-    pass # remove this line when starting your function
+    result = []
+    for num in numbers:
+        sum = 0
+        list_length = len(numbers)
+        for x in range(list_length):
+            sum += numbers[x]
+    return sum
+numbers = [34,12,7,9]
+print(add_numbers(numbers))
+
 
 def get_max(numbers):
     """
@@ -13,7 +22,15 @@ def get_max(numbers):
     :param numbers: a list of numbers
     :return: The largest number in the list
     """
-    pass # remove this line when starting your function
+    max_ = numbers[0]
+    length_list = len(numbers)
+    for x in range(length_list):
+        if numbers[x] > max_:
+            max_ = numbers[x]
+    return max_
+numbers = [17,3245,65,72,45]
+result = get_max(numbers)
+print(result)
 
 def get_min(numbers):
     """

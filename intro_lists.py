@@ -1,9 +1,11 @@
 def swap(list_one):
-    """
-    Function that swaps the first and last elements of the list, regardless of length
-    :param list_one: a list of at least two elements
-    :return: the same list with the first and last elements swapped
-    """
+    save_first_element = list_one[0]
+    list_one[0] = list_one[-1]
+    list_one[-1] = save_first_element
+    return(list_one)
+
+
+
     pass # make sure to remove this line before beginning work on this function
 
 
